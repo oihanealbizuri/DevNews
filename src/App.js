@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import 'moment-timezone';
-import 'moment/locale/es.js';
 import './App.css';
 import {Button} from "./components/Button.js";
 import {Table} from "./components/Table.js";

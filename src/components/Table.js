@@ -1,6 +1,8 @@
 import Moment from "react-moment";
 import {Button} from "./Button.js";
 import React from "react";
+import 'moment-timezone';
+import 'moment/locale/es.js';
 
 export const Table = ({list, onDismiss}) =>
     <div className="table">
