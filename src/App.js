@@ -78,12 +78,10 @@ class App extends Component {
             <div className="page">
                 <div className="interactions">
                     <Search value={searchTerm}
+                            buttonLabel={'Search'}
                             onChange={this.onSearchChange}
                             onSubmit={this.onSearchSubmit}
-                    >
-
-                        Search
-                    </Search>
+                    />
                 </div>
                 {result &&
                 <Table list={result.hits}
@@ -98,6 +96,5 @@ class App extends Component {
         )
     }
 }
-
 
 export default App;
