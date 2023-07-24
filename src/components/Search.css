@@ -1,0 +1,32 @@
+input {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 10px;
+    border: 1px solid #dddddd;
+}
+
+input:hover {
+    border-color: var(--primary-color-active);
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    background: transparent;
+    color: #808080;
+    cursor: pointer;
+}
+
+.search-button {
+    color: hsl(100, 100%, 100%);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.search-button:hover {
+    color: hsla(0, 0%, 0%, 0.7);
+    background-color: var(--primary-color-active);
+    border-radius: 5px;
+}
