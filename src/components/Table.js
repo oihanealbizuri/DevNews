@@ -13,10 +13,10 @@ export const Table = ({list, onDismiss}) =>
                     <span style={{width: '65%'}}>
                         <a href={item.url}>{item.title}</a>
                     </span>
-                    <span style={{width: '25%'}}>
+                    <span style={{width: '20%'}}>
                       {item.author}
                     </span>
-                    <span style={{width: '10%', color: 'rgba(0, 0, 0, 0.6)'}}>
+                    <span style={{width: '15%', color: 'rgba(0, 0, 0, 0.6)'}}>
                         {<Moment locale="en" fromNow>{item.created_at}</Moment>}
                     </span>
                     <span style={{width: '10%'}}>
