@@ -3,6 +3,7 @@ import './App.css';
 import {Button} from "./components/Button.js";
 import {Table} from "./components/Table.js";
 import {Search} from "./components/Search.js";
+import logo from './logo.png';
 
 const DEFAULT_QUERY = 'gpt-4';
 const PATH_BASE = 'https://hn.algolia.com/api/v1';
@@ -73,6 +74,7 @@ class App extends Component {
         return (
             <div className="page">
                 <div className="interactions">
+                    <img className={"logo"} src={logo} alt={"DEV NEWS"}/>
                     <Search value={searchTerm}
                             buttonLabel={'Search'}
                             onChange={this.onSearchChange}
