@@ -4,10 +4,11 @@ import {Button} from "./components/Button.js";
 import {Table} from "./components/Table.js";
 import {Search} from "./components/Search.js";
 
-const DEFAULT_QUERY = 'react';
+const DEFAULT_QUERY = 'gpt-4';
 const PATH_BASE = 'https://hn.algolia.com/api/v1';
-const PATH_SEARCH = '/search';
+const PATH_SEARCH = '/search_by_date';
 const PARAM_SEARCH = 'query=';
+const PARAM_TAGS = 'tags=story';
 const PARAM_PAGE = 'page=';
 
 
@@ -40,7 +41,7 @@ class App extends Component {
     }
 
     fetchSearchTopStories(searchTerm, page = 0) {
-        fetch(`${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}&${PARAM_PAGE}${page}`)
+        fetch(`${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}&${PARAM_TAGS}&${PARAM_PAGE}${page}`)
             .then(response => response.json())
             .then(result => this.setSearchTopStories(result))
             .catch(error => error);
@@ -83,7 +84,7 @@ class App extends Component {
                            onDismiss={this.onDismiss}/>
                 }
                 <div className={"interactions"}>
-                    <Button onClick={() => this.fetchSearchTopStories(searchTerm, page + 1)}>
+                    <Button className={"more-button"} onClick={() => this.fetchSearchTopStories(searchTerm, page + 1)}>
                         More
                     </Button>
                 </div>
