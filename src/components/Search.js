@@ -6,5 +6,5 @@ export const Search = ({value, buttonLabel, onChange, onSubmit}) =>
                value={value}
                onChange={onChange}
         />
-        <button type="submit">{buttonLabel}</button>
+        <button className={"search-button"} type="submit">{buttonLabel}</button>
     </form>;
