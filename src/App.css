@@ -3,24 +3,34 @@
     --primary-color-active: hsla(169, 80%, 48%, 0.9);
 }
 
+body {
+    color: #222;
+    background: #f4f4f4;
+    font: 400 14px CoreSans, Arial, sans-serif;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .page {
     margin: 20px;
 }
 
+.logo {
+    width: 25rem;
+    margin-right: 1rem;
+}
+
 .interactions {
-    text-align: center;
-}
-
-.search-button {
-    color: hsl(100, 100%, 100%);
-    background-color: var(--primary-color);
-    border-radius: 5px;
-}
-
-.search-button:hover {
-    color: hsla(0, 0%, 0%, 0.7);
-    background-color: var(--primary-color-active);
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .table-row:hover {
