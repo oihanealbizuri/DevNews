@@ -33,7 +33,6 @@ class App extends Component {
         const {searchTerm} = this.state;
         this.fetchSearchTopStories(searchTerm);
         event.preventDefault();
-
     }
 
     setSearchTopStories(result) {
@@ -57,8 +56,6 @@ class App extends Component {
     }
 
     onDismiss(id) {
-        console.log(id);
-
         function isNotId(item) {
             return item.objectID !== id;
         }
@@ -67,11 +64,9 @@ class App extends Component {
         this.setState({
             result: {...this.state.result, hits: updatedList}
         })
-
     }
 
     render() {
-
         const {result, searchTerm} = this.state;
         const page = (result && result.page) || 0;
         return (
@@ -84,8 +79,8 @@ class App extends Component {
                     />
                 </div>
                 {result &&
-                <Table list={result.hits}
-                       onDismiss={this.onDismiss}/>
+                    <Table list={result.hits}
+                           onDismiss={this.onDismiss}/>
                 }
                 <div className={"interactions"}>
                     <Button onClick={() => this.fetchSearchTopStories(searchTerm, page + 1)}>
