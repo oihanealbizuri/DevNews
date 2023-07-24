@@ -13,4 +13,4 @@ As developers, staying up-to-date with the latest trends, tools, and news is ess
 Execute `yarn start` in your terminal to launch the app and open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## License
-**DEV NEWS** is licensed under the MIT License, allowing you to use, modify, and distribute the project freely.
+**DEV NEWS** is licensed under the **GNU General Public License (GPL)**, which means you are free to use, modify, and distribute the project under the same terms. The GPL promotes the idea of keeping software free and open-source, ensuring that any derived works also remain open.
