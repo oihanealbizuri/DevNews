@@ -14,3 +14,5 @@ Execute `yarn start` in your terminal to launch the app and open [http://localho
 
 ## License
 **DEV NEWS** is licensed under the **GNU General Public License (GPL)**, which means you are free to use, modify, and distribute the project under the same terms. The GPL promotes the idea of keeping software free and open-source, ensuring that any derived works also remain open.
+
+![visitors](https://api.visitorbadge.io/api/visitors?path=oihanealbizuri%2FDevNews&countColor=%23263759)
